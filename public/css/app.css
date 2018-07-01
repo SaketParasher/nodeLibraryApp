@@ -1,0 +1,13 @@
+body{
+    padding-top: 0px !important;
+}
+#signupform{
+    margin-top: 8px;
+    display: block;
+    width: 95%;
+    margin: auto;
+    
+}
+#signupform .row{
+    padding: 2px 0 4px 0;
+}

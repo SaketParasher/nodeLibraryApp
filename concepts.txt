@@ -1,0 +1,34 @@
+
+//"start": "set DEBUG = app & nodemon app.js"
+
+// NODEJS & EXPRESS CONCEPTS
+
+/**********************************************   NPM  VERSIONING     **********************************************/
+
+--> when we install any package using npm install --save express then in package.json in dependencies object in front
+    of express version a carrot sign appears(^) say  "express" : "^4.16.3" which means that it is going to automatically
+    update its version for you as new package version comes out.
+    ~ means 4.16.x ie it will update the most minor version when npm install is executed.
+
+    It will keep 4.xx.x and update the rest when we run npm install.
+    When no sign in front then it will not update the version automatically.
+
+--> ~/.npmrc file configuration
+
+progress=false
+save=true
+save-exact=true
+
+This configuration in npmrc will enable two things . 
+npm install <packageName> will directly get attached in dependencies property of package.json
+and ~ & ^ will not get attached before the package version 
+
+--> DEBUG Package is used for debugging. To run the app --> set DEBUG = * & node app.js
+--> Morgan is used to see the web traffic. set app.use(morgan('combined/tiny')).
+
+
+/**************************************   MONGODB    ********************************* */
+
+show dbs --> to show all dbs
+
+

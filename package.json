@@ -1,0 +1,36 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "saket",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.1.1",
+    "chalk": "2.4.1",
+    "console.table": "0.10.0",
+    "debug": "3.1.0",
+    "ejs": "2.6.1",
+    "express": "^4.16.3",
+    "jquery": "3.3.1",
+    "mongodb": "3.1.0",
+    "morgan": "1.9.0",
+    "nodemon": "1.17.5",
+    "pug": "2.0.3"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
